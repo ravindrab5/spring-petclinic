@@ -3,7 +3,7 @@ agent any
    stages {
 	stage('Clone'){
 		steps{
-		git 'https://github.com/ravindrab5/maven-project.git'
+		git 'https://github.com/ravindrab5/spring-petclinic.git'
 		}
          }
 stage('Compile & Package'){
