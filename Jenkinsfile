@@ -13,6 +13,12 @@ stage('Compile & Package'){
 			}
 			}
   }
+stage('Create databases'){
+			steps{
+        		sh 'docker-compose up -d'
+                        sh 'nohup java -jar target/*.jar'
+			}
+  }
 
 }
 }
